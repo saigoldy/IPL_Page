@@ -1,0 +1,30 @@
+#wrapper { 
+    width: 920px; 
+    height: 350px; 
+    margin: 0 auto; 
+} 
+
+#home1 { 
+    width: 400px; 
+    height: 300px; 
+    float: left; 
+} 
+
+#home2 { 
+    width: 400px; 
+    height: 300px; 
+    float: right; 
+}
+
+@media (max-width:767px) {
+    .home1 {
+        position: relative;
+        padding-bottom: 56.25%; /* 16/9 ratio */
+        padding-top: 30px; /* IE6 workaround*/
+        height: 0;
+        overflow: hidden;
+    }
+    .home2 {
+        margin-left: 0;
+    }
+}

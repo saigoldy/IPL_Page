@@ -1,0 +1,198 @@
+Regina smallest
+# You are using Python
+n=int(input())
+for i in range(2,n+1):
+    if(n%i==0):
+        print(i)
+        break
+
+
+
+
+
+
+Buzzcraft
+# You are using Python
+n=int(input())
+st=20
+count=0
+for i in range(0,n):
+ print(st,end=" ")
+ st=st+40+(i*4)
+
+
+
+Team Event
+# You are using Python
+n=int(input())
+if n>=10:
+ n=str(n)
+ l=len(n)
+ print(abs(int(n[0])-int(n[l-1])))
+else:
+ print("Invalid input")
+
+
+
+
+
+
+given set of nu,ber of length N
+# You are using Python
+from itertools import combinations
+N=int(input())
+userinput=input()
+num_list=userinput.split()
+for i in range(0,N):
+ num list[i]=int(num list[i])
+quadlist=list(combinations(num_list,4))
+count=0
+for i in range(0,len(quadlist)):
+ ans=sum(quadlist[i])
+ if ans==1:
+ count=count+1
+if count>0:
+ print('YES')
+else:
+ print('NO')
+
+
+
+
+
+Triangle Game
+# You are using Python
+a=int(input())
+b=int(input())
+c=int(input())
+if a+b+c==180 and a!=0 and b!=0 and c!=0:
+ if a==90 or b==90 or c==90:
+ print("Prize 2")
+ elif a==60 and b==60:
+ print("Prize 3")
+ else:
+ print("Prize 1")
+else:
+ print("No Prize")
+
+
+
+
+
+Aes Numbers
+# You are using Python
+inp=[int(i) for i in input().split()][:2]
+s,e=inp
+count=0
+c=0
+for i in range(s,e):
+ for j in range(2,i//2+1):
+ if(i%j==0):
+ count+=1
+ if count==2:
+ c+=1
+ count=0
+print(c)
+
+
+
+
+given number N, check is a number is perfect or not
+def perfect_number(n):
+ sum=0
+ for x in range(1,n):
+ if n%x==0:
+ sum +=x
+ return sum
+T=int(input())
+input list=[]
+for i in range(0,T):
+ N=int(input())
+ input list.append(N)
+for i in range(0,T):
+N = input_list[i]
+ sum = perfect number(N)
+ if N == sum:
+ print('1')
+ else:
+ print('0')
+
+
+
+
+Daily Routine
+# You are using Python
+inp=input()
+count=0
+s=0
+for i in range(0,len(inp)):
+ if inp[i]=="C":
+ count=1
+ break
+ elif inp[i]=="S" or inp[i]=="E":
+ break
+for i in range(i,len(inp)):
+ if inp[i]=="E":
+ count=2
+ s=1
+ break
+ elif inp[i]=="S" and count==1:
+ count=-100
+ break
+ elif inp[i]=="S":
+ break
+for i in range(i,len(inp)):
+ if inp[i]=="S":
+ count+=1
+ s=1
+ elif inp[i]=="C" and s==1:
+ count=-100
+ break
+if count>0:
+ print("yes")
+
+
+
+
+Nth Fibonacci
+# You are using Python
+def getNthFib(n):
+ lastTwo=[0,1]
+ counter=3
+ while counter<=n:
+ nextFib = lastTwo[0]+lastTwo[1]
+ lastTwo[0]=lastTwo[1]
+ lastTwo[1]=nextFib
+ counter+=1
+ return lastTwo[1] if n>1 else lastTwo[0]
+n=int(input())
+print(getNthFib(n))
+
+
+
+
+Nchildrens
+
+# You are using Python
+N=int(input())
+rating=input()
+rating list=rating.split()
+for i in range(0,N):
+ rating list[i]=int(rating list[i])
+candies=0
+def unique(list1):
+ list set=set(list1)
+ unique list=(list(list set))
+ return unique_list
+unique list=unique(rating list)
+unique list.sort()
+for i in range(0,N):
+ candies=candies+(unique list.index(rating list[i]))+1
+print(int(candies))
+
+
+perfect number and list problem is  ot solved
+
+
+
+

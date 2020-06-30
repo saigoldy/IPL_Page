@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Rajasthan_Royals_Logo.svg/1200px-Rajasthan_Royals_Logo.svg.png">
+<title>Rajasthan Royals Quiz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets_9/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+    <div id="container">
+        <div id="start">Start Quiz!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="rr_quiz.js"></script>
+</body>
+
+	<script type="text/javascript">
+	var pageTracker = _gat._getTracker("UA-68528-29");
+	pageTracker._initData();
+	pageTracker._trackPageview();
+	</script>
+
+
+		<!-- Scripts -->
+			<script src="assets_9/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,353 @@
+digts of a number 1
+def absdiff(input_list,N):
+    flag = 'no'
+    res = []
+
+    for i in range (0,N):
+
+        number = input_list[i]
+        digit_list = digitlIST(number)
+        for j in range(0,len(digit_list)-1):
+            diff = digit_list[j] - digit_list[j+1]
+            if abs(diff) == 1:
+                flag = 'yes'
+            else:
+                flag = 'no'
+                break
+        if flag == 'yes':
+            res.append(input_list[i])
+ return res
+
+#Function to get digits from a number
+def digitlIST(number):
+    res_digit = [int(x) for x in str(number)]
+    return res_digit
+
+N= int(input())
+input_list = []
+for i in range (1,N+1):
+    input_list.append(int(i))
+
+res = absdiff(input_list,N)
+if len(res) != 0;
+   print(*res)
+else:
+    print('-1')
+
+
+
+
+
+minimum distance
+
+N = int(input())
+N_input = input()
+number_list = N_input.split()
+UV = input()
+UV_list = UV.split()
+U = UV_list[0]
+V = UV_list[1]
+U_index = []
+V_index = []
+U_index = [i for i in range(len(number_list)) if number_list[i] == U
+V_index = [i for i in range(len(number_list)) if number_list[i] == V
+distance_list = []
+for i in range(0,len(U_index)):
+ for j in range(0,len(V_index)):
+ distance_list.append(abs(U_index[i] - V_index[j]))
+print(min(distance_list))
+
+
+
+
+
+
+n lines consit of n elements
+n=int(input())
+slarge=0
+for i in range (0,n):
+ num=int(input())
+ if(i==0):
+ large=num
+ elif(num>large):
+ slarge=large
+ large=num
+ elif(num>slarge):
+ slarge=num
+print(slarge)
+
+
+
+
+
+
+
+Dob
+n = int(input())
+import datetime
+DOB_tot = input()
+dob = DOB_tot.split()
+count = 0
+endlimit = (n*3)-1
+allowance_cust = []
+for i in range(0,endlimit,3):
+ count = count +1
+ empdate = []
+
+
+ empdate.append(dob[i])
+ empdate.append(dob[i+1])
+ empdate.append(dob[i+2])
+ d1 = datetime.datetime(1987, 7, 22)
+ if empdate[1] == 'JANUARY':
+ month = 1
+ elif empdate[1] == 'FEBRUARY':
+ month = 2
+ elif empdate[1] == 'MARCH':
+ month = 3
+ elif empdate[1] == 'APRIL':
+ month = 4
+ elif empdate[1] == 'MAY':
+
+
+
+
+
+
+cookery  contest
+# You are using Python
+n = int(input())
+arr = [int(i) for i in input().split()][:n]
+ar1 = list(arr)
+m=0
+ar1.sort()
+for i in range(0,n):
+ if(ar1[i]!=0):
+ m=ar1[i]
+ break
+s=0
+while m!=0:
+ for i in range(0,n):
+if arr[i]%m!=0:
+ s=1
+ break
+ if(s==0):
+ arr=[x//m for x in arr]
+ m-=1
+ s=0
+print(*arr)
+
+
+
+
+
+
+Aayush's Scholarship
+m = [int(i) for i in input().split()][:5]
+s = 0
+#print(sum(m)/5)
+if (min(m)<=2) or ((sum(m)/5)<4) or (max(m)!=5):
+ print("No")
+else:
+ print("Yes")
+
+
+
+
+
+
+Mahirl's evening Party
+
+day = input()
+num = int(input())
+days = ["MON","TUE","WED","THU","FRI","SAT","SUN"]
+if day in days and num>=0:
+ if days.index(day)<4:
+ if num in range(700,1001):
+ print("Successful")
+ else:
+ print("Unsuccessful")
+ elif num>=1500:
+ print("Successful")
+ else:
+ print("Unsuccessful")
+else:
+print ("Invalid Input")
+
+
+Ratul is interested
+x=int(input())
+n=int(input())
+sum=0
+for i in range(0,n+1):
+ if(i%2==0):
+ sum=sum+pow(x,i)
+else:
+ sum=sum-pow(x,i)
+print(sum)
+
+
+Pranavi divisor
+
+n=int(input())
+for i in range(1,n+1):
+ if(n%i==0):
+ print(i,end=' ')
+
+
+
+
+sam participated
+n=int(input())
+tot=0
+while(n>0):
+ dig=n%10
+ tot=tot+dig
+ n=n//10
+print(tot)
+
+
+Mars Pell Bee
+n=int(input())
+arr = [int(i) for i in input().split()][:n]
+c=0
+for i in range(0,n):
+ if arr[i]%2==0:
+ c+=1
+print(c,len(arr)-c)
+
+
+Rachitha loves
+# You are using Python
+n=int(input())
+rev=0
+while(n>0):
+ temp=n%10
+ rev=(rev*10)+temp
+ n=n//10
+print(rev) 
+
+
+Seetha , maths
+n=int(input())
+a=0
+b=1
+c=0
+while(c<=n):
+ c=a+b;
+ a=b;
+ b=c;
+ d=a+b;
+ for x in range(c+1,d):
+ if(x<=n):
+ print(x,end=" ")
+ else:
+ break;
+
+
+
+
+
+
+Rakul is weak
+n=int(input())
+x=1
+for i in range(1,n+1):
+ print(x,end=' ')
+ x=x*2
+
+
+
+write  a program palidrome or out
+num=int(input())
+number=num
+revnumber=0
+while(num>0):
+ rem=num%10
+ revnumber=revnumber*10+rem
+ num=num//10
+if(revnumber==number):
+ print(number,"is palindrome")
+else:
+ print(number,"is not palindrome") 
+
+
+
+
+
+multiplication table
+num=int(input())
+end=int(input())
+for i in range(1,end+1):
+ print(i,'x',num,'=',num*i)
+
+
+
+
+john little brother is strugglig maths
+n1,n2=map(float,input().split())
+choice=input()
+if(choice=='+'):
+ print(n1+n2)
+elif(choice=='-'):
+ print(n1-n2)
+elif(choice=='*'):
+ print(n1*n2)
+else:
+ print(n1/n2)
+
+
+
+card game
+arr = []
+for i in range(0,3):
+ x = input()
+ arr.append(x)
+if arr.count(arr[0])==3:
+ print("Double Bonanza")
+elif arr[0][0]==arr[1][0] and arr[1][0]==arr[2][0]:
+ print("Bonanza")
+elif arr[0][2]==arr[1][2] and arr[1][2]==arr[2][2]:
+ print("Bonanza")
+else:
+ print("No Bonanza")
+
+
+
+write a program to accept to two inthers from the
+number1 = int(input())
+number2 = int(input())
+product = number1 *number2
+if(product <= 1000):
+ print(product)
+else:
+ print(number1+number2)
+
+
+
+Lucky pairs
+inp = [int(i) for i in input().split()][:3]
+a,b,n=inp
+a = a*(2**(n//2+n%2))
+b = b*(2**(n//2))
+print(a+b)
+
+
+roll numbers
+n=int(input())
+slarge=0
+for i in range (0,n):
+ num=int(input())
+ if(i==0):
+ large=num
+ elif(num>large):
+ slarge=large
+ large=num
+ elif(num>slarge):
+ slarge=num
+print(slarge)
+
+
+
+
+
