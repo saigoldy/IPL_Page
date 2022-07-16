@@ -17,8 +17,8 @@ let questions = [
         question : "How many titles did MI won in IPL",
         imgSrc : "img/bg10.jpg",
         choiceA : "2",
-        choiceB : "4",
-        choiceC : "3",
+        choiceB : "5",
+        choiceC : "4",
         correct : "B"
     },{
         question : "Who was the winning captain in 2011 clt20",
